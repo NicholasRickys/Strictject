@@ -24,6 +24,7 @@ function new(class, ...)
 			if type(value) ~= type(_new[key]) then
 				error "Can't change type of value in objects!"
 			end
+			_new[key] = value
 		end
 	})
 
